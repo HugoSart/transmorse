@@ -14,8 +14,8 @@ Este programa possui duas depenêndias:
 Para a execução do programa, é necessário que estas dependências estejam devidamente instaladas no seu ambiente de execução python.
 
 ## Execução
-Para executar o tradutor, navege até a pasta _transmorce/src_ e digite o seguinte comando:
-- _python -m transmorce.app -i <INPUT_FILE> -o <OUTPUT_FOLDER>_
+Para executar o tradutor, navege até a pasta _transmorse/src_ e digite o seguinte comando:
+- _python -m transmorse.app -i <INPUT_FILE> -o <OUTPUT_FOLDER>_
 
-Para execurar os testes, utilize o seguinte comando, também na pasta _transmorce/src_:
-- _python -m transmorce.test_
+Para execurar os testes, utilize o seguinte comando, também na pasta _transmorse/src_:
+- _python -m transmorse.test_
