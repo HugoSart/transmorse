@@ -1,10 +1,8 @@
-# -*- coding: utf-8 -*-
-
 import argparse
 
 import numpy as np
 import scipy.io.wavfile as wavefile
-from transmorse import morse
+from transmorse import morse, util
 
 enc = morse.Encoder()
 dec = morse.Decoder()
@@ -21,13 +19,12 @@ def main():
     print('[TRANSMORSE] Codificando para código intermediário ...')
     if extension == 'morse':
         with open(args.input, 'r') as f:
-            inter = enc.from_morse(f.read().replace('\n', ''))
+            inter = enc.from_morse(f.read())
     elif extension == 'txt':
         with open(args.input, 'r') as f:
-            inter = enc.from_text(f.read().replace('\n', ''))
+            inter = enc.from_text(f.read())
     elif extension == 'wav':
-        with open(args.input, 'r') as f:
-            inter = enc.from_audio(f.read().replace('\n', ''))
+        inter = enc.from_audio(util.wav_to_waves(args.input))
     else:
         raise RuntimeError('Extensão de entrada inválida: ' + extension)
 

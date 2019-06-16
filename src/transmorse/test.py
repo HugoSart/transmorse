@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Arquivo contendo os testes do módulo transmorce.
 
 import numpy as np
@@ -57,10 +56,10 @@ def run_tests():
         try:
             test()
             end = time.process_time()
-            print('%2.2f s | SUCCESS!' % (end - start))
+            print('%2.2f s \t| SUCCESS!' % (end - start))
         except AssertionError as e:
             end = time.process_time()
-            print('%2.2f s | FAILED : ' % (end - start), e)
+            print('%2.2f s \t| FAILED : ' % (end - start), e)
 
 
 def main():

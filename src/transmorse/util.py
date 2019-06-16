@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Arquivo que contém utilizades para o módulo transmorce.
 
 import numpy as np

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Arquivo principal do transmorce. Jás aqui a lógica da tradução.
 
 from enum import Enum, unique
